@@ -17,5 +17,38 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Popins', sans-serif;
+}
+.bx{
+    font-size: 1.7rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    overflow-x: hidden;
+}
+body.dark{
+    --light:#181a1e;
+    --grey:#25252c;
+    --dark:#fbfbfb;
+}
+body{
+    background-color:var(--grey);
+    overflow-x:hidden;
+}
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    background:var(--light);
+    width:230px;
+    height: 100%;
+    z-index:2000;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    transition:all 0.3s ease;
 
 }
