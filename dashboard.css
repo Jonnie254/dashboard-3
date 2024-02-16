@@ -267,4 +267,13 @@ body{
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+.content nav #theme-toggle:checked+.theme-toggle::before{
+    left: calc(100% - 30px);
+}
+/* styling the insights */
+.content main{
+    width:100%;
+    padding:36px 24px;
+    
 
+}
