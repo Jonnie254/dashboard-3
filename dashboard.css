@@ -145,3 +145,56 @@ body{
 .sidebar .side-menu li a.logout{
     color: var(--light-danger);
 }
+/* styling the navbar */
+.content{
+    position:relative;
+    width:calc(100% - 230px);
+    left:230px;
+    transition:all 0.3s ease;
+}
+ .sidebar.close ~ .content{
+    width:calc(100% - 60px);
+    left:60px;
+ }
+ .content nav{
+    height:56px;
+    background: var(--light);
+    padding:0 24px 0 0;
+    display:flex;
+    align-items:center;
+    grid-gap:24px;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:1000;
+ }
+
+.content nav::before{
+    content:"";
+    position: absolute;
+    width:40px;
+    height:40px;    
+    bottom:-40px;
+    left:0;
+    border-radius: 50%;
+    box-shadow: -20px -20px 0 var(--light);
+}
+.content nav a {
+    color:var(--dark);
+}
+.content nav .bx.bx-menu{
+    cursor: pointer;
+    color:var(--dark);
+}
+.content nav form{
+    max-width: 400px;
+    width:100%;
+    margin-right: auto;
+}
+.content nav .form-input{
+    display:flex;
+    align-items:center;
+    height:36px;
+
+
+}
