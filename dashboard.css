@@ -7,6 +7,7 @@
    --grey:#eee;
    --dark-grey:#AAAAAA;
    --dark:#363949;
+   --danger: #D32F2F;
    --light-danger:#FECDa3;
    --warning:#FBC02D;
    --sucess:#388E3C;
@@ -195,6 +196,48 @@ body{
     display:flex;
     align-items:center;
     height:36px;
+}
+.content nav .form-input input{
+   flex-grow:1;
+   padding: 0 16px;
+   height: 100%;
+   border:none;
+   background:var(--grey);
+   border-radius:36px 0 0 36px;
+   outline:none;
+   width:100%;
+   color:var(--dark);
+}
+.content nav .form-input button{
+    width: 40px;
+    height: 40px;
+    background:var(--primary);
+    border-radius:0 36px 36px 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    color:var(--dark);
+    font-size: 18px;
+    border: none;
+    outline:none;
+}
 
-
+.content nav .notif{
+    font-size: 20px;
+    position:relative;
+}
+.content nav .notif .count{
+    position:absolute;
+    top: -6px;
+    right: -6px;
+    width:20px;
+    height:20px;
+    background:var(--danger);
+    border-radius: 50%;
+    font-size: 12px;
+    border:2px solid var(--light);
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
