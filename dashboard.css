@@ -387,9 +387,51 @@ body {
 .content main .bottom-data>div{
   border-radius: 20px;
   background:var(--light);
+  padding:24px;
+  overflow-x:auto;
 }
+.content main .bottom-data .header{
+  display:flex;
+  align-items:center;
+  grid-gap:16px;
+  margin-bottom:24px;
+}
+.content main .bottom-data .header h3{
+  margin-right:auto;
+  font-size:24px;
+  font-weight:600;
+}
+.content main .bottom-data .header .bx{
+  cursor:pointer;
+}
+.content main .bottom-data .orders{
+  flex-grow: 1;
+  flex-basis:500px;
+}
+.content main .bottom-data .orders table{
+  width:100%;
+  border-collapse:collapse;
+}
+.content main .bottom-data .orders table th{
+  padding-bottom:12px;
+  font-size: 13px;
+  text-align: left;
+  border-bottom:1px solid var(--grey);
+}
+.content main .bottom-data .orders table td{
+  padding:16px 0;
+}
+.content main .bottom-data .orders table tr td:first-child{
+  display:flex;
+  align-items:center;
+  grid-gap:12px;
+  padding-left:6px;
+  object-fit: cover;
+}
+
 .content main .bottom-data .orders table td img{
   width:40px;
   height:40px;
   border-radius:50%;
 }
+.content main .bottom-data .orders table tbody
