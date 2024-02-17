@@ -8,10 +8,10 @@
   --dark-grey: #aaaaaa;
   --dark: #363949;
   --danger: #d32f2f;
-  --light-danger: #fecda3;
+  --light-danger: #e08d9a;
   --warning: #fbc02d;
   --sucess: #388e3c;
-  --light-success: #bbf7d0;
+  --light-success: rgb(54, 214, 110);
 }
 * {
   margin: 0;
@@ -426,12 +426,67 @@ body {
   align-items:center;
   grid-gap:12px;
   padding-left:6px;
-  object-fit: cover;
 }
 
 .content main .bottom-data .orders table td img{
   width:40px;
   height:40px;
   border-radius:50%;
+  object-fit: cover;
 }
-.content main .bottom-data .orders table tbody
+.content main .bottom-data .orders table tbody tr{
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+
+.content main .bottom-data .orders table tbody tr:hover{
+  background:var(--light-primary);
+}
+.content main .bottom-data .orders table tbody tr td .status{
+  padding:6px 16px;
+  color:var(--light);
+  border-radius:20px;
+  font-weight:700;
+}
+.content main .bottom-data .orders table tbody tr td .status.completed{
+  background:var(--sucess);
+}
+.content main .bottom-data .orders table tbody tr td .status.pending{
+  background:var(--light-danger);
+}
+.content main .bottom-data .orders table tbody tr td .status.process{
+  background:var(--light-success);
+}
+.content main .bottom-data .reminders{
+  flex-grow:1;
+  flex-basis:300px;
+}
+.content main .bottom-data .reminders .task-list{
+  width:100%;
+}
+.content main .bottom-data .reminders .task-list li{
+  display:flex;
+  width:100%;
+  margin-bottom:16px;
+  background:var(--grey);
+  padding:20px 10px;
+  border-radius:10px;
+  align-items:center;
+  justify-content: space-between;
+}
+.content main .bottom-data .reminders .task-list li .task-title{
+  display:flex;
+  align-items:center;
+}
+.content main .bottom-data .reminders .tak-list li{
+  margin-left:6px;
+}
+.content main .bottom-data .reminders .task-list li .bx{
+  cursor:pointer;
+}
+.content main .bottom-data .reminders .task-list li.completed{
+  border-left:10px solid var(--sucess);
+}
+.content main .bottom-data .reminders .task-list li.not-completed{
+  border-left:10px solid var(--light-danger);
+}
