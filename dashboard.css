@@ -490,3 +490,30 @@ body {
 .content main .bottom-data .reminders .task-list li.not-completed{
   border-left:10px solid var(--light-danger);
 }
+.content main .bottom-data .reminders .task-list li:last-child{
+  margin-bottom:0;
+}
+
+/* styling the media queries */
+@media screen and (max-width:768px){
+  .sidebar{
+    width:200px;
+  }
+  .content{
+    width:calc(100% - 60px);
+    left:200px;
+  }
+}
+
+@media screen and (max-width:576px){
+  .content nav form .form-input input{
+    display:none;
+  }
+  .content nav form .form-input button{
+    width:auto;
+    height:auto;
+    background: transparent;
+    color:var(--dark);
+    border-radius: none;
+  }
+}
